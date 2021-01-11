@@ -11,30 +11,29 @@
     <title>Lyric Searcher</title>
     <!-- External CSS stylesheet link (change styles.css with your CSS file) -->
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="index.js"></script>
   </head>
   <body>
-    <header>
-      <h1>LYRIC SEARCHER!</h1>
-      <p>
-        We all have moments where we suddenly forget about a song's lyrics.
-        We are here to help you search up lyrics from your favorite artist!
-        Simply just enter your favorite artist and song in the space provided
-        below and see words appear!
-        *** Lyrics are printed with \n in text, currently finding ways to fix
-        this issue! **
-      </p>
-    </header>
     <main>
       <div id="search">
-        <label>Artist: <input id="artist"></label>
-        <label>Song Name: <input id="song"></label>
-        <button>Search</button>
+        <h1>LYRIC SEARCH</h1>
+        <div class="search-item">
+          <label>Artist: <input id="artist"></label>
+        </div>
+        <div class="search-item">
+          <label>Song Name: <input id="song"></label>
+        </div>
+        <div class="search-item">
+          <button>Search</button>
+        </div>
       </div>
 
-      <h2>Lyrics of the song:</h2>
-      <!-- lyrics response from API -->
-      <div id="response">
+      <!-- MAKE EDITS HERE WITH JAVASCRIPT-->
+      <!-- LYRIC API RESPONSE WILL BE SHOWN HERE -->
+      <div class="hidden" id ="result">
+        <h2>Lyrics of the song:</h2>
+        <div id="response"></div>
       </div>
     </main>
   </body>

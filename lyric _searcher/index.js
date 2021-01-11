@@ -48,10 +48,16 @@
    * @param {JSON} data of lyrics recieved
    */
   function processResponse(text) { // success: do something with the response data
+
     let lyrics = gen("p");
     lyrics.textContent = text;
     id('response').appendChild(lyrics);
+    console.log(lyrics);
 
+    let home = document.getElementById('search');
+    home.classList.add('hidden');
+    let view = document.getElementById('result');
+    view.classList.remove('hidden');
     qs('button').disabled = false;
   }
 

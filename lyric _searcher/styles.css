@@ -1,0 +1,51 @@
+/**
+ * CSS file that provides colors and
+ * comfortable views for the user when displaying
+ * lyrics!
+ */
+
+ body {
+    background-image: url("imgs/cloud_background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  h1, h2{
+    color: black;
+    font-family: 'Ubuntu';
+  }
+
+  h1 {
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* position the title above the search bars*/
+      bottom: -500%;
+      transform: translate(-50%, -50%);
+  }
+
+  #response {
+    border: 1px solid green;
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 20px;
+  }
+
+  #search {
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+  }
+
+  .search-item {
+      padding: 10px;
+  }
+
+  .hidden {
+      visibility: hidden;
+  }
